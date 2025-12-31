@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הנחיות לניהול אירוע פיטש בהפקות קולנוע בחינוך</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(to left, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1); /* Shadow matching the black border style */
+        }
+        /* Modal Animation */
+        .modal {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Hero / Title -->
+    <section class="bg-gradient-to-br from-indigo-900 via-blue-800 to-blue-600 text-white py-20 border-b-2 border-black">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-black mb-4">הנחיות לניהול אירוע פיטש</h1>
+            <p class="text-xl md:text-2xl font-light opacity-90 max-w-2xl mx-auto">
+                תחנת למידה ראשונית בתהליך הפקת פרויקט הגמר
+            </p>
+        </div>
+    </section>
+
+    <!-- Intro: Importance -->
+    <section id="intro" class="py-16 bg-yellow-50 border-b-2 border-black">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-1">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-900 border-r-4 border-blue-500 pr-4">חשיבות האירוע</h2>
+                    <p class="text-lg mb-4">
+                        הפיטש מהווה <span class="font-bold text-blue-600">תחנת למידה ראשונית</span> בתהליך הפקת פרויקט הגמר.
+                        מטרתו אינה שיפוט, תחרות או אישור סופי של רעיונות, אלא דיוק, העמקה וחיזוק הקשרים של היוצר והיוצרת למרכיבי הרעיון המתגבש.
+                    </p>
+                    <p class="mb-4 text-gray-600">
+                        מה עובד ומה לא? מה נשמע אמין, מה חסר ומה חזק?
+                    </p>
+                    <div class="bg-blue-50 p-6 rounded-xl border-2 border-black mt-6">
+                        <h3 class="font-bold text-blue-800 mb-2 flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                            מרחב חינוכי בטוח
+                        </h3>
+                        <p class="text-sm text-blue-900">
+                            האירוע נועד לחזק את יכולת היוצר/ת להקשבה ולשיפוט עצמי. חייב להתקיים במרחב בטוח:
+                            אין דירוג, אין לעג, ואין תיוג של רעיונות כ"טובים" או "חלשים". חוסר ודאות והתלבטות הם חלק טבעי מהתהליך.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <div class="bg-indigo-50 rounded-full p-10 border-2 border-black">
+                        <i data-lucide="lightbulb" class="w-32 h-32 text-indigo-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part A: Structure -->
+    <section id="part-a" class="py-16 bg-slate-50 relative overflow-hidden border-b-2 border-black">
+        <!-- Decorative bg element -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 -translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="container mx-auto px-6 max-w-5xl relative z-10">
+            <div class="text-center mb-12">
+                <span class="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-bold tracking-wide border border-black">תהליך העבודה</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-4 text-gray-900">חלק א׳: מבנה ומהלך האירוע</h2>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Step 1 -->
+                <div class="bg-yellow-50 p-8 rounded-2xl shadow-sm border-2 border-black card-hover transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 font-bold border border-black">1</span>
+                        <h3 class="text-xl font-bold">פתיחה והגדרת מסגרת</h3>
+                        <span class="text-xs text-gray-800 bg-gray-100 px-2 py-1 rounded border border-gray-300">5–10 דקות</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-800 list-disc list-inside marker:text-indigo-600">
+                        <li>הצגת שלוש המטרות החשובות של האירוע.</li>
+                        <li>הבהרה: הפיץ' אינו אישור סופי להפקה.</li>
+                        <li>מותר להגיע עם רעיון מתהווה.</li>
+                        <li class="font-bold text-indigo-900">הרעיון, האחריות והבחירות האמנותיות שייכים לתלמיד בלבד. המורה והקהל הם שותפים לחשיבה – לא מקבלי החלטות.</li>
+                    </ul>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-yellow-50 p-8 rounded-2xl shadow-sm border-2 border-black card-hover transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-pink-100 text-pink-600 font-bold border border-black">2</span>
+                        <h3 class="text-xl font-bold">הצגת הפיץ׳ – התלמיד/ה</h3>
+                        <span class="text-xs text-gray-800 bg-gray-100 px-2 py-1 rounded border border-gray-300">3–5 דקות</span>
+                    </div>
+                    <p class="text-gray-800 mb-3">הצגה בעל־פה בליווי דימויים.</p>
+                    <div class="bg-pink-50 p-3 rounded text-sm text-pink-900 mb-3 border-r-4 border-pink-500 border-2 border-black font-medium">
+                        <strong>הדגש:</strong> על הסיפור, המשמעות והעמדה – לא על אמצעים טכניים.
+                    </div>
+                    <p class="text-sm text-gray-600">היוצר והיוצרת יענו במהלך הפיטש על 10 השאלות המרכזיות (מפורט בחלק ב').</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-yellow-50 p-8 rounded-2xl shadow-sm border-2 border-black card-hover transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 font-bold border border-black">3</span>
+                        <h3 class="text-xl font-bold">שאלות הבהרה של הקהל</h3>
+                        <span class="text-xs text-gray-800 bg-gray-100 px-2 py-1 rounded border border-gray-300">6–9 דקות</span>
+                    </div>
+                    <p class="text-gray-800 mb-4">מטרתן להבין את הרעיון ואת עולמו הפנימי של היוצר, ולא לכוון אותו.</p>
+                    <div class="mb-4">
+                        <span class="text-emerald-800 font-bold text-sm">דוגמה טובה:</span>
+                        <p class="text-sm italic text-gray-600">"איפה אתה מרגיש הכי קרוב רגשית לסיפור?"</p>
+                    </div>
+                    <div class="bg-red-50 p-3 rounded border-2 border-black">
+                        <h4 class="text-red-700 font-bold text-sm mb-1 flex items-center gap-1"><i data-lucide="ban" class="w-4 h-4"></i> מה לא עושים?</h4>
+                        <ul class="text-sm text-red-700 font-medium space-y-1">
+                            <li>אין הצעות תסריטאיות ("אני הייתי עושה...").</li>
+                            <li>אין הערכה שיפוטית ("זה חזק / חלש").</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-yellow-50 p-8 rounded-2xl shadow-sm border-2 border-black card-hover transition duration-300">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-amber-100 text-amber-600 font-bold border border-black">4</span>
+                        <h3 class="text-xl font-bold">התייחסות המורה וסיכום</h3>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="font-bold text-gray-900 mb-1">תפקיד המורה</h4>
+                        <p class="text-sm text-gray-700">מחזק בחירות ייחודיות, מזהה פוטנציאל ומנסח <span class="underline decoration-amber-500 decoration-2 font-bold">דילמה מרכזית אחת</span> (אמנותית, רגשית או אתית). המורה הוא מתווך תהליך, לא במאי ולא עורך.</p>
+                    </div>
+
+                    <div class="bg-amber-50 p-4 rounded-lg border-2 border-black">
+                        <h4 class="font-bold text-amber-900 mb-2 text-sm">רפלקציה אישית לתלמיד:</h4>
+                        <ul class="text-sm text-amber-900 font-medium space-y-1 list-disc list-inside">
+                            <li>מה התחדד לי בעקבות הפיטש?</li>
+                            <li>אילו שאלות אני לוקח להמשך?</li>
+                            <li>אילו בחירות אני מחזק ואילו עדיין פתוחות?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Part B: 10 Questions -->
+    <section id="part-b" class="py-20 bg-gray-900 text-white border-b-2 border-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold gradient-text inline-block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 pb-2">חלק ב׳: עשר שאלות מפתח</h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+                    בשלב הפיטש מתמקדים בסיפור ובקונפליקט. לחצו על כל שאלה להרחבה והסבר נוסף.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Q1 -->
+                <div onclick="openModal(1)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">1</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">על מה הסיפור במשפט?</h3>
+                    <p class="text-gray-300 text-sm mb-2">מה המשמעות? מה הרעיון האנושי, הערכי או המוסרי של הסרט – מעבר לעלילה.</p>
+                    <p class="text-xs text-gray-500 italic border-r-2 border-blue-500 pr-2">דוגמה: זה סיפור על שתיקה כהגנה...</p>
+                </div>
+
+                <!-- Q2 -->
+                <div onclick="openModal(2)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">2</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">מי הדמות המרכזית?</h3>
+                    <p class="text-gray-300 text-sm">מי הגיבור/ה, ואיך הוא/היא מוגדר/ת בתחילת הסיפור.</p>
+                </div>
+
+                <!-- Q3 -->
+                <div onclick="openModal(3)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">3</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">מה הקונפליקט הפנימי?</h3>
+                    <p class="text-gray-300 text-sm">איזה מאבק פנימי מלווה את הדמות (פחד, צורך, סתירה, אשמה).</p>
+                </div>
+
+                <!-- Q4 -->
+                <div onclick="openModal(4)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">4</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">מה הקונפליקט החיצוני?</h3>
+                    <p class="text-gray-300 text-sm">איזו מציאות, דמות או איום חיצוני מפעילים לחץ על הגיבור.</p>
+                </div>
+
+                <!-- Q5 -->
+                <div onclick="openModal(5)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black lg:col-span-2 relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">5</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">כיצד הקונפליקט החיצוני מפעיל את הפנימי?</h3>
+                    <p class="text-gray-300 text-sm">איך האירועים פוגעים בדיוק בנקודת החולשה של הדמות.</p>
+                </div>
+
+                <!-- Q6 -->
+                <div onclick="openModal(6)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">6</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">מה הדמות רוצה – ומה המחיר?</h3>
+                    <p class="text-gray-300 text-sm">מה היא מבקשת להשיג, ומה היא עלולה לאבד אם תפעל.</p>
+                </div>
+
+                <!-- Q7 -->
+                <div onclick="openModal(7)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">7</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">מהי נקודת ההכרעה?</h3>
+                    <p class="text-gray-300 text-sm">הרגע שבו הגיבור שובר את מהלך האירועים ומחליט לנקוט ביוזמה.</p>
+                </div>
+
+                <!-- Q8 -->
+                <div onclick="openModal(8)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">8</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">האם הדמות עוברת שינוי?</h3>
+                    <p class="text-gray-300 text-sm">אם כן – איזה שינוי פנימי מתרחש בה.</p>
+                </div>
+
+                <!-- Q9 -->
+                <div onclick="openModal(9)" class="cursor-pointer bg-gray-800 p-6 rounded-xl hover:bg-gray-750 transition border-2 border-black relative group shadow-lg">
+                    <div class="absolute top-4 left-4 text-blue-400 opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <span class="text-5xl font-black text-gray-700 absolute opacity-20 -mt-4 -mr-4">9</span>
+                    <h3 class="text-xl font-bold text-blue-300 mb-3 relative z-10">מה גורם לשינוי?</h3>
+                    <p class="text-gray-300 text-sm">איזה אירוע, הבנה או בחירה מחוללים אותו.</p>
+                </div>
+
+                <!-- Q10 -->
+                <div onclick="openModal(10)" class="cursor-pointer bg-gradient-to-br from-indigo-600 to-purple-700 p-6 rounded-xl shadow-lg lg:col-span-2 relative group card-hover border-2 border-black">
+                    <div class="absolute top-4 left-4 text-white opacity-0 group-hover:opacity-100 transition"><i data-lucide="maximize-2" class="w-5 h-5"></i></div>
+                    <div class="flex items-start gap-4">
+                        <span class="text-5xl font-black text-white opacity-30">10</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">עם מה הצופה יוצא?</h3>
+                            <p class="text-indigo-100">איזו שאלה, מחשבה או חוויה רגשית נשארת לאחר סיום הסרט.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Container -->
+    <div id="infoModal" class="modal fixed inset-0 z-[100] flex items-center justify-center p-4 bg-gray-900 bg-opacity-90 backdrop-blur-sm" onclick="closeModal(event)">
+        <div class="modal-content bg-yellow-50 w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden border-2 border-black" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 relative border-b-2 border-black">
+                <button onclick="closeModal()" class="absolute top-4 left-4 text-white/80 hover:text-white transition p-1 rounded-full hover:bg-white/10">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+                <div class="flex items-center gap-3">
+                    <span id="modalNumber" class="flex items-center justify-center w-10 h-10 rounded-full bg-white/20 text-white font-bold backdrop-blur-md border border-white/30">1</span>
+                    <h3 id="modalTitle" class="text-2xl font-bold text-white">כותרת השאלה</h3>
+                </div>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="p-8">
+                <p id="modalDescription" class="text-lg font-medium text-gray-800 mb-6 border-l-4 border-blue-500 pl-4"></p>
+                
+                <div class="bg-slate-50 rounded-xl p-6 border-2 border-black">
+                    <h4 class="text-sm uppercase tracking-wider text-slate-500 font-bold mb-3 flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-4 h-4"></i>
+                        הרחבה והעמקה
+                    </h4>
+                    <p id="modalExpansion" class="text-gray-800 leading-relaxed font-medium"></p>
+                </div>
+
+                <div class="mt-6 flex justify-end">
+                    <button onclick="closeModal()" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 border-2 border-black rounded-lg transition font-bold">סגור</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Data for each question
+        const questionsData = {
+            1: {
+                title: "על מה הסיפור במשפט?",
+                description: "מה המשמעות? מה הרעיון האנושי, הערכי או המוסרי של הסרט – מעבר לעלילה.",
+                expansion: "משפט ה-Logline הוא תעודת הזהות של הסרט. זהו המצפן שלאורו מתקבלות כל ההחלטות היצירתיות. נסו לנסח את המשפט כך שיכלול את הגיבור, הקונפליקט והסיכון, אך בעיקר את הלב הרגשי של הסיפור. שאלו את עצמכם: מדוע הסרט הזה חייב להיעשות עכשיו?"
+            },
+            2: {
+                title: "מי הדמות המרכזית?",
+                description: "מי הגיבור/ה, ואיך הוא/היא מוגדר/ת בתחילת הסיפור.",
+                expansion: "דמות מעניינת היא דמות שיש לה 'פצע' או חיסרון. הקהל מתחבר לחולשות לא פחות משהוא מתחבר לחוזקות. נסו להבין: מי הוא האדם הזה לפני שהסרט מתחיל? מה הוא חושב על עצמו? ומהי ה'מסיכה' שהוא עוטה כלפי העולם?"
+            },
+            3: {
+                title: "מה הקונפליקט הפנימי?",
+                description: "איזה מאבק פנימי מלווה את הדמות (פחד, צורך, סתירה, אשמה).",
+                expansion: "הדרמה האמיתית מתרחשת בתוך הנפש. הקונפליקט הפנימי הוא המנוע הרגשי של הסרט. זהו הקרב בין מה שהדמות 'רוצה' (הרצון הגלוי) לבין מה שהיא באמת 'צריכה' (הצורך הלא-מודע), או התנגשות בין שני ערכים חשובים שהדמות לא יכולה ליישב ביניהם."
+            },
+            4: {
+                title: "מה הקונפליקט החיצוני?",
+                description: "איזו מציאות, דמות או איום חיצוני מפעילים לחץ על הגיבור.",
+                expansion: "קונפליקט חיצוני חייב להיות ויזואלי וקונקרטי. מי או מה עומד בדרכו של הגיבור? זה יכול להיות אויב אנושי, מוסד בירוקרטי, כוח טבע או מצב חברתי. האיום חייב להיות ממשי, דוחק ומחייב את הגיבור לפעולה מיידית."
+            },
+            5: {
+                title: "כיצד הקונפליקט החיצוני מפעיל את הפנימי?",
+                description: "איך האירועים פוגעים בדיוק בנקודת החולשה של הדמות.",
+                expansion: "זהו סוד התסריט המהודק: הקשר בין הפנים לחוץ. המכשולים החיצוניים לא צריכים להיות אקראיים; הם צריכים להיות מתוכננים כך ש'ילחצו' בדיוק על הפצע הפנימי של הגיבור ויאלצו אותו להתמודד עם הפחדים הכי גדולים שלו."
+            },
+            6: {
+                title: "מה הדמות רוצה – ומה המחיר?",
+                description: "מה היא מבקשת להשיג, ומה היא עלולה לאבד אם תפעל.",
+                expansion: "לכל בחירה משמעותית יש מחיר. אם הגיבור ישיג את מטרתו, מה הוא יקריב בדרך? האם הוא מוכן לשלם את המחיר הזה? המחיר הופך את הרצון למשמעותי ויוצר מתח דרמטי (Stakes). ללא סיכון לאובדן, הניצחון חסר ערך."
+            },
+            7: {
+                title: "מהי נקודת ההכרעה?",
+                description: "הרגע שבו הגיבור שובר את מהלך האירועים ומחליט לנקוט ביוזמה.",
+                expansion: "זוהי נקודת המפנה הדרמטית ביותר בסרט (הקלימקס). זהו הרגע שבו הגיבור מפסיק להיות 'קורבן' של הנסיבות ומפסיק להגיב למציאות – ומתחיל לייצר מציאות חדשה. זהו רגע של אומץ, הקרבה או הבנה עמוקה שמשנה את כללי המשחק."
+            },
+            8: {
+                title: "האם הדמות עוברת שינוי?",
+                description: "אם כן – איזה שינוי פנימי מתרחש בה.",
+                expansion: "קשת הדמות (Character Arc) היא הלב של סרט החניכה. האם הגיבור למד משהו על עצמו או על העולם? האם הוא אדם שונה בסוף הסרט ממי שהיה בתחילתו? השינוי לא חייב להיות חיובי או גרנדיוזי, אבל הוא חייב להיות מורגש ואמין."
+            },
+            9: {
+                title: "מה גורם לשינוי?",
+                description: "איזה אירוע, הבנה או בחירה מחוללים אותו.",
+                expansion: "שינוי לא קורה בחלל ריק וגם לא באופן פתאומי ללא סיבה. הוא תוצאה של הצטברות לחצים, כישלונות, או גילוי מרעיש שמערער את תפיסת עולמו של הגיבור. זהו ה'דלק' שמאפשר לדמות לחצות את הקו ולעשות משהו שלא הייתה מעזה לעשות קודם לכן."
+            },
+            10: {
+                title: "עם מה הצופה יוצא?",
+                description: "איזו שאלה, מחשבה או חוויה רגשית נשארת לאחר סיום הסרט.",
+                expansion: "קולנוע הוא כלי להעברת רגש ומחשבה. בסופו של דבר, כשהאורות נדלקים, מה אתם רוצים שהצופים ייקחו איתם הביתה? האם הם יצאו עם תקווה? עם זעזוע? עם שאלה מוסרית שתמשיך להדהד בראשם? זוהי ה'אמירה' של היצירה שלכם."
+            }
+        };
+
+        function openModal(id) {
+            const data = questionsData[id];
+            if (!data) return;
+
+            // Update content
+            document.getElementById('modalNumber').innerText = id;
+            document.getElementById('modalTitle').innerText = data.title;
+            document.getElementById('modalDescription').innerText = data.description;
+            document.getElementById('modalExpansion').innerText = data.expansion;
+
+            // Show modal
+            const modal = document.getElementById('infoModal');
+            modal.classList.add('active');
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(event) {
+            // Check if clicking outside content or explicitly closing
+            if (event && !event.target.classList.contains('modal') && !event.target.closest('button')) {
+                return; 
+            }
+
+            const modal = document.getElementById('infoModal');
+            modal.classList.remove('active');
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modal = document.getElementById('infoModal');
+                if (modal.classList.contains('active')) {
+                    closeModal();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
